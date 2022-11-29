@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs', 'yarn']
 
 [phases.install]
-cmd = ['npm install','npm ci']
+cmd = ['npm install','npm --production','npm --omit=dev']
 
 [phases.build]
-cmd = ['node --optimize_for_size --max_old_space_size=3072 src/bot.js']
+cmd = ['npm run build']
