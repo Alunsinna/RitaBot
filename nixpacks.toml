@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs', 'npm']
 
 [phases.install]
-cmd = ['npm install',''npm ci']
+cmd = ['npm install','npm ci']
 
 [phases.build]
 cmd = ['node --optimize_for_size --max_old_space_size=3072 src/bot.js']
