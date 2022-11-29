@@ -6,3 +6,6 @@ cmd = ['npm install --omit=dev']
 
 [phases.build]
 cmd = ['npm run build']
+
+[variables]
+NPM_CONFIG_PRODUCTION='false'
