@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ['nodejs', 'yarn']
+nixPkgs = ['nodejs', 'yarn','discord']
 
 [phases.install]
-cmds = ['npm i tar','npm i discord.js@dev','npm install -g npm ','npm install --omit=dev','npm ci']
+cmds = ['npm i tar','npm install -g npm ','npm install --omit=dev','npm ci']
 
 [phases.build]
 cmds = ["echo building!"]
