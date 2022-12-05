@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs', 'yarn']
 
 [phases.install]
-cmds = ['npm i tar','npm install -g npm ','npm install --omit=dev','npm ci']
+cmds = ['npm i tar','npm uninstall discord.js','npm install discord.js','npm install -g npm ','npm install --omit=dev','npm ci']
 
 [phases.build]
 cmds = ["echo building!"]
