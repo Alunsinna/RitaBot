@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs', 'yarn']
 
 [phases.install]
-cmds = ["installing!",'npm install']
+cmds = ['npm install','npm ci']
 
 [phases.build]
 cmds = ["echo building!"]
