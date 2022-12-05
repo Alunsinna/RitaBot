@@ -7,7 +7,7 @@ NPM_CONFIG_PRODUCTION='false'
 nixPkgs = ['nodejs', 'yarn']
 
 [phases.install]
-cmd = ['npm ci']
+cmd = ['npm install']
 
 [phases.build]
 cmd = ['npm run build']
